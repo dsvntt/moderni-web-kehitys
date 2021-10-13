@@ -1,0 +1,250 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url('christmas-bg.png');
+}
+
+h2, footer a{
+    font-family: "Merriweather";
+    font-weight: 900;
+}
+
+p{
+    font-family: "Titillium Web";
+}
+
+body{
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 20px solid white;
+    border-radius: 30px;
+    background-color: white;
+}
+
+header img{
+    display: none;
+}
+
+header{
+    background-color: #a0181c;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+header h1{
+    font-family: "Merriweather";
+    font-weight: 900;
+}
+
+#main-pictures img{
+    display: none;
+    width: 32.65%;
+    margin-top: 1%;
+    border: 2px solid black;
+}
+
+#main-text section{
+    padding: 1%;
+    margin-top: 1%;
+    border: 2px dashed #a0181c;
+}
+
+#ajankohtaista{
+    margin-top: 1%;
+    border: 2px dashed #a0181c;
+    padding: 1%;
+}
+
+#ajankohtaista-h2{
+    text-align: center;
+    background-image: linear-gradient(to right,white, #a0181c, white);
+    border: 2px solid #a0181c;
+    margin-top: 0;
+}
+
+#ajankohtaista1, #ajankohtaista2, #ajankohtaista3{
+    width: 90%;
+    float: right;
+
+}
+
+.mini1{
+    clear: both;
+    width: 7%;
+    float: left;
+}
+
+#ajankohtaista::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+#sanottua1 h2{
+    text-align: center;
+    background-image: linear-gradient(to right,white, #a0181c, white);
+    border: 2px solid #a0181c;
+    margin-top: 0;
+}
+
+#sanottua1{
+    margin-top: 1%;
+    border: 2px dashed #a0181c; 
+    padding: 1%;
+}
+
+#sanottua2{
+    padding: 1%;
+    border-bottom: 2px dashed #a0181c;
+    border-right: 2px dashed #a0181c;
+    border-left: 2px dashed #a0181c;
+}
+
+footer{
+    padding: 1%;
+    margin-top: 1%;
+    background-color: #a0181c;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.bolder{
+    display: inline-block;
+    font-weight: bold;
+    width: 100px;
+}
+
+footer p{
+    padding-left: 1%;
+}
+
+footer a{
+    font-size: 1.3em;
+}
+
+#media ul{
+    list-style: none; 
+    padding: 0;
+    margin: 0;
+}
+
+#media li{
+    padding: 1%;
+    margin: 1%;
+    background-color: #335a16;
+    text-align: center;
+}
+
+#media a{
+    font-weight: bold;
+    text-decoration: none;
+    color: #a0181c;
+} 
+
+#social p{
+    display: inline-block;
+
+}
+
+#social{
+    text-align: center;
+}
+
+
+
+@media screen and (min-width: 600px){
+
+    #main-pictures img{
+        display: inline;
+    }
+
+    #main-text section{
+        border: none;
+    }
+
+    #text1n2{
+        width: 50%;
+        float: left;
+    }
+    
+    #text3n4{
+        width: 50%;
+        float: right;
+    }
+
+    #ajankohtaista{
+        clear: both;
+    }
+
+    #footer-text{
+        width: 50%;
+        float: left;
+    }
+
+    #media{
+        width: 50%;
+        float: right;
+    }
+
+    footer a{
+        font-size: unset;
+    }
+
+    #social {
+        width: 50%;
+        text-align: left;
+    }
+}
+
+@media screen and (min-width: 700px) {
+
+    #ajankohtaista{
+        width: 49%;
+        float: left;
+        margin-bottom: 1%;
+    }
+
+    #sanottua1, #sanottua2{
+        width: 49%;
+        float: right;
+    }
+
+    footer{
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    header img{
+        display: inline;
+    }
+
+    #header-left{
+        width: 28%;
+        float: left;
+    }
+
+    #header-right{
+        width: 28%;
+        float: left;
+    }
+
+    header h1{
+        width: 44%;
+        display: block;
+        float: left;
+    }
+
+    header::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+}

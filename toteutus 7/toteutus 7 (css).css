@@ -1,0 +1,278 @@
+*{
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+a{
+    font-family: Garamond, Baskerville, "Baskerville Old Face", "Hoefler Text", "Times New Roman", serif;
+}
+
+body{
+    max-width: 1000px;
+    margin: auto;
+}
+
+#nav1Normal{
+    display: none;
+}
+
+#unshow{
+    display: none;
+}
+
+header{
+    display: none;
+}
+
+main{
+    display: none;
+}
+
+#nav1Second{
+    border: 2px solid #852425;
+    background-color: #b999a1;
+    margin-bottom: 1%;
+}
+
+#nav1Second ul{
+    list-style: none;
+    margin: 0;
+    padding: 1%;
+}
+
+#nav1Second a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    color: #852425;
+}
+
+#show:hover #unshow{
+    display: inline;
+}
+
+#unshow li{
+    border: 2px solid #852425;
+    margin: 1%;
+}
+
+#logo img{
+    margin-top: 1%;
+    width: 100%;
+}
+
+#linkit{
+    border: 2px solid #b999a1;
+}
+
+#linkit ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff7e6;
+}
+
+#linkit li{
+    padding: 3%;
+    margin: 2.5%;
+    background-color: #b999a1;
+}
+
+#linkit a{
+    text-decoration: none;
+    color: black;
+    font-weight: inline;
+}
+
+#linkit a::after{
+    content: ">";
+    display: inline-block;
+    float: right;
+}
+
+footer{
+    display: block;
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding: 0.5%;
+}
+
+@media screen and (min-width: 600px) {
+
+    #nav1Second{
+        display: none;
+    }
+
+    #nav1Normal{
+        display: inline;
+    }
+
+    #nav1Normal ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    #nav1Normal li{
+        display: block;
+        width: 17.67%;
+        float: left;
+        background-color: #b999a1;
+        padding: 1%;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+    #nav1Normal a{
+        text-decoration: none;
+        color: black;
+    }
+
+    #logo{
+        display: none;
+    }
+
+    header{
+        display: inline-block;
+        text-align: center;
+        border: 2px solid black;
+        margin-bottom: 1%;
+        background-color: #fff7e6;
+        
+    }
+
+    #ylateksti{
+        border-bottom: 2px dashed gray;
+        font-style: italic;
+        padding: 2%;
+    }
+
+    main{
+        display: inline;
+        width: 69%;
+        float: right;
+    }
+    
+    #linkit{
+        width: 29%;
+        float: left;
+    }
+
+    #linkit a::after{
+        display: none;
+    }
+
+    footer{
+        clear: both;
+    }
+
+    main h2{
+        text-align: center;
+        border-top: 2px dashed #b999a1;
+        border-bottom: 2px dashed #b999a1;
+        padding: 2%;
+        margin-top: 0;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    main h3{
+        font-size: 22px;
+    }
+
+    .sections{
+        background-color: #fff7e6;
+        border: 2px solid #b999a1;
+        margin: 1%;
+        padding: 0;
+    }
+
+    .bold{
+        font-weight: bold;
+    }
+
+    .text-left{
+        width: 50%;
+        float: left;
+    }
+
+    .text-right{
+        width: 50%;
+        float: right;
+    }
+
+    .padding{
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    .lisatieto{
+        display: block;
+        background-color: #b999a1;
+        padding: 2%;
+        margin: 0;
+    }
+
+    .lisatietoja{
+        float: right;
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+    }
+
+    .lisatieto::after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+    @media screen and (min-width: 900px){
+
+        #logo{
+            display: inline;
+        }
+
+        #logo img{
+            width: 20%;
+            float: left;
+            margin-bottom: 1%;
+            margin-top: 1%;
+        }
+
+        #nav1Normal{
+            width: 70%;
+            float: right;
+            margin-top: 1.5%;
+            margin-right: -2.3%;
+        }
+
+        #nav1Normal li{
+            width: 15%;
+            margin-left: 1%;
+            padding: 1.5%;
+        }
+
+        #header-left{
+            width: 45%;
+            float: left;
+            padding: 1%;
+            margin: 1%;
+            margin-top: 1%;
+        }
+
+        #header-right{
+            width: 45%;
+            float: right;
+            padding: 1%;
+            margin: 1%;
+        }
+
+        #ylateksti{
+            border: none;
+        }
+
+
+
+    }
+

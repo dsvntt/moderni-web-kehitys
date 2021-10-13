@@ -1,0 +1,217 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 2px solid blue;
+}
+
+#nav1Normal{
+    display: none;
+}
+
+#nav1Second {
+    background-color: aqua;
+}
+
+#unshow{
+    display: none;
+    position: absolute;
+}
+
+#unshow a{
+    color: white;
+}
+
+#show:hover #unshow{
+    display: block;
+    padding: 5px;
+    background-color: black;
+}
+
+#nav1Second ul{
+    list-style: none;
+}
+
+#black{
+    color: black;
+}
+
+#nav1Second a{
+    text-decoration: none;
+}
+
+header{
+    color: aqua;
+    background-image: linear-gradient(blue, white);
+    text-align: center;
+    padding: 40px;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+    margin: 0;
+}
+
+#nav2{
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#nav2 ul{
+    list-style: none;
+}
+
+#nav2 a{
+    color: white;
+    text-decoration: none;
+}
+
+#text1{
+    padding: 10px;
+}
+
+#text2{
+    padding: 10px;
+    border-top: 2px solid blue;
+}
+
+#nav3, #nav4, #nav5{
+    background-color: aqua;
+    padding: 15px;
+}
+
+#link1 h2, #link2 h2, #link3 h2{
+    background-color: blue;
+    padding: 5px;
+    color: aqua;
+}
+
+#nav3 a, #nav4 a, #nav5 a{
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+@media screen and (min-width: 500px){
+
+   .inline{
+       display: inline-block;
+       padding: 5px;
+   } 
+
+   #unshow2{
+       display: none;
+       position: absolute;
+       list-style: none;
+       padding: 0;
+       margin: 0;
+   }
+
+   #unshow2 li{
+       padding: 5px;
+   }
+
+   #show-li:hover #unshow2{
+       display: block;
+       background-color: black;
+       border: 2px solid white; 
+   }
+
+   #link1, #link2, #link3{
+       background-color: aqua;
+       width: 33.3%;
+       float: left;
+       padding: 1%;
+   }
+
+   #nav3, #nav4, #nav5{
+       background-color: transparent;
+   }
+
+   #link1 h2, #link2 h2, #link3 h2{
+       width: 90%;
+       margin-left: 5%;
+   }
+
+   footer{
+       clear: both;
+   }
+    
+}
+
+@media screen and (min-width: 650px){
+
+    header{
+        margin-top: -1%;
+    }
+
+    #nav1Second{
+        display: none;
+    }
+
+    #nav1Normal{
+        display: inline-block;
+        background-color: aqua;
+        width: 100%;
+        
+    }
+
+    #nav{
+        width: 100%;
+        background-color: aqua;
+    }
+
+    #text1{
+        width: 50%;
+        float: left;
+    }
+
+    #text2{
+        width: 50%;
+        float: right;
+        border-top: 0;
+    }
+
+    #link1{
+        clear: both;
+    }
+}
+
+@media screen and (min-width: 800px){
+
+
+
+#link1, #link2, #link3{
+    float: none;
+
+}
+
+#link1, #link2, #link3 {
+    width: 100%;
+}
+
+#text1, #text2 {
+    width: 32%;
+    float: left;
+}
+
+#sivupalkki{
+    float: right;
+    width: 33%;
+    margin: 1%;
+
+}
+
+#footer{
+    clear: both;
+}
+
+}
